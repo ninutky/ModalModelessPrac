@@ -24,7 +24,7 @@ namespace ModalModelessPrac
         public Form1()
         {
             InitializeComponent();
-            IsMdiContainer = true;
+            //IsMdiContainer = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,8 +46,14 @@ namespace ModalModelessPrac
         private void button2_Click(object sender, EventArgs e)
         {
             CustomForm form = new CustomForm();
-            form.MdiParent = this;
+            //form.MdiParent = this;
             form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.ShowDialog();
         }
     }
 }
